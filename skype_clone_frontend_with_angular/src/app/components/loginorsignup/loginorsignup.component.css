@@ -1,0 +1,8 @@
+.loginTab {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: calc(100vh / 4);
+    background-color: beige;
+    left: calc(100vw / 2 - 200px);
+}
