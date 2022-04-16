@@ -1,3 +1,7 @@
 <div ngClass="loginTab" *ngIf="user">
-    <h1>{{user.location}}</h1>
+    <h1>Skype</h1>
+    <h2>Login</h2>
+    <p>Enter username or mail-id</p>
+    <input type="text" name="usernameoremail" id="loginId" required autofocus>
+    <input type="button" value="submit" id="submit" onclick="userNameVerify()">
 </div>

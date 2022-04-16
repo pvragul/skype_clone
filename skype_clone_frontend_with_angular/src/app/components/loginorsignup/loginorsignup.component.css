@@ -3,6 +3,35 @@
     height: auto;
     position: absolute;
     top: calc(100vh / 4);
-    background-color: beige;
+    background-color: #fcfcfc44;
     left: calc(100vw / 2 - 200px);
+    border-radius: 10px;
+    border: 1px solid #fcfcfc66;
+    padding: 1em 1.5em;
+    backdrop-filter: blur(20px);
+    box-shadow: #fcfcfc44 0 0 30px;
+    color: #fcfcfc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-size: 1.5em;
+    color: aquamarine;
+}
+h2 {
+    font-size: 1.3em;
+    line-height: 0;
+}
+p {
+    margin-top: 1.5em;
+    font-size: 1.1em;
+}
+
+input[type='text'] {
+    width: 100%;
+    background-color: transparent;
+    color: #fcfcfc;
+    outline: none;
+    border: none;
+    border-bottom: #fcfcfc 1px solid;
+    padding: 0 0 0.3em;
 }

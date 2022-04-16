@@ -14,11 +14,12 @@ export class LoginorsignupComponent implements OnInit {
   constructor(private loginService: LoginService) { }
 
   ngOnInit(): void {
-    this.userIntro();
+    this.userNameVerify();
   }
 
-  userIntro(): void{
+  userNameVerify(): void{
     this.loginService.findUser('ragul_pv').subscribe(user => this.user = user);
+    console.log(this.user);
     
   }
 

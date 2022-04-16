@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
 import { LoginorsignupComponent } from './components/loginorsignup/loginorsignup.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { LoginorsignupComponent } from './components/loginorsignup/loginorsignup
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
     // AngularFontAwesomeModule
   ],
   providers: [],
