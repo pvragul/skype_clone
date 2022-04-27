@@ -9,18 +9,22 @@ import { userInterface } from 'user.interface';
 })
 export class LoginorsignupComponent implements OnInit {
 
-  @Input() user: userInterface | undefined;
+  public user!: userInterface;
+  public usernameInp!: string;
   
   constructor(private loginService: LoginService) { }
 
   ngOnInit(): void {
-    this.userNameVerify();
+    // this.userNameVerify();
   }
 
-  userNameVerify(): void{
-    this.loginService.findUser('ragul_pv').subscribe(user => this.user = user);
+  getUser(): void{
+    this.loginService.findUser(this.usernameInp).subscribe(user => this.user = user);
     console.log(this.user);
     
   }
 
+  isValidUser():void{
+
+  }
 }
